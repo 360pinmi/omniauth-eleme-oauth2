@@ -1,11 +1,11 @@
 Omniauth-eleme-oauth2
 ======================
 
-Wechat OAuth2 Strategy for OmniAuth 1.0. 
+Eleme OAuth2 Strategy for OmniAuth 1.0. 
 
 You need to get a eleme API key at: https://open.shop.ele.me/
 
-Wechat oauth2 specification can be found at: https://open.shop.ele.me/openapi/documents/oauth
+Eleme oauth2 specification can be found at: https://open.shop.ele.me/openapi/documents/oauth
 
 ## Installation
 
@@ -28,7 +28,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
-You can now access the OmniAuth Wechat OAuth2 URL: `/auth/eleme`
+You can now access the OmniAuth Eleme OAuth2 URL: `/auth/eleme`
 
 ## Configuration
 
