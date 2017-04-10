@@ -67,3 +67,6 @@ Also, you may need params from redirect_uri. e.g. if you access http://localhost
   branch_id: 25
 }
 ```
+
+If you have any question about this gem, please contact me by email (xie_s@isumeng.com) or wechat(微信号：wanxsb)
+
