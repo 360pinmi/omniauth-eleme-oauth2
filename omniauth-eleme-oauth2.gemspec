@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["wanxsb@gmail.com"]
 
   spec.summary       = "omniauth strategy for eleme "
-  spec.description   = "Using OAuth2 to authenticate ele.me shop user when web resources being viewed"
-  spec.homepage      = "http://www.diandanbao.com"
+  spec.description   = "饿了么商家平台 OAuth2.0 对接开发"
+  spec.homepage      = "git@github.com:360pinmi/omniauth-eleme-oauth2.git"
 
   spec.files         = Dir['README.md', 'lib/**/*']
   spec.bindir        = "exe"
