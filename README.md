@@ -62,8 +62,8 @@ Here's an example of an authentication hash available in the callback by accessi
 
 Also, you may need params from redirect_uri. e.g. if you access http://localhost:3000/auth/eleme?branch_id=25. Here's an example of an parameter hash available in the callback by accessing `request.env["omniauth.params"]`.:
 
+```
 {
   branch_id: 25
 }
-
-
+```
