@@ -4,7 +4,7 @@ module OmniAuth
   module Strategies
     class Eleme < OmniAuth::Strategies::OAuth2
       # Give your strategy a name.
-      option :name, "饿了么商家平台"
+      option :name, "eleme"
 
       option :authorize_params, {scope: "all"}
       # This is where you pass the options you would pass when
