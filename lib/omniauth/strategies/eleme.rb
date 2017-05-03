@@ -4,13 +4,13 @@ module OmniAuth
   module Strategies
     class Eleme < OmniAuth::Strategies::OAuth2
       # Give your strategy a name.
-      option :name, "eleme"
+      option :name, "饿了么商家平台"
 
       option :authorize_params, {scope: "all"}
       # This is where you pass the options you would pass when
       # initializing your consumer from the OAuth gem.
       option :client_options, {
-        :site => "https://open-api-sandbox.shop.ele.me",
+        :site => Rails.env.production? ? "https://open-api.shop.ele.me" : "https://open-api-sandbox.shop.ele.me", 
         :authorize_url => "/authorize",
         :token_method => :post,
         # :token_url => "http://localhost:3002/backend/shops/diandanbao/branches",
@@ -23,7 +23,7 @@ module OmniAuth
       # additional calls (if the user id is returned with the token
       # or as a URI parameter). This may not be possible with all
       # providers.
-      uid{ }
+      uid{ raw_info['id'] }
 
       info do
         {
